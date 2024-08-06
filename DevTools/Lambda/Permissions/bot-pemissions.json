@@ -1,0 +1,160 @@
+{
+  "Version": "2012-10-17",
+  "Id": "default",
+  "Statement": [
+    {
+      "Sid": "lex-us-west-2-GetAnswersToHipaaQuestions",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "lex.amazonaws.com"
+      },
+      "Action": "lambda:InvokeFunction",
+      "Resource": "arn:aws:lambda:us-west-2:767397911243:function:stg-lex-lambda-validations",
+      "Condition": {
+        "ArnLike": {
+          "AWS:SourceArn": "arn:aws:lex:us-west-2:767397911243:intent:GetAnswersToHipaaQuestions:*"
+        }
+      }
+    },
+    {
+      "Sid": "lex-us-west-2-GetPhoneNumber",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "lex.amazonaws.com"
+      },
+      "Action": "lambda:InvokeFunction",
+      "Resource": "arn:aws:lambda:us-west-2:767397911243:function:stg-lex-lambda-validations",
+      "Condition": {
+        "ArnLike": {
+          "AWS:SourceArn": "arn:aws:lex:us-west-2:767397911243:intent:GetPhoneNumber:*"
+        }
+      }
+    },
+    {
+      "Sid": "lex-us-west-2-Confirm",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "lex.amazonaws.com"
+      },
+      "Action": "lambda:InvokeFunction",
+      "Resource": "arn:aws:lambda:us-west-2:767397911243:function:stg-lex-lambda-validations",
+      "Condition": {
+        "ArnLike": {
+          "AWS:SourceArn": "arn:aws:lex:us-west-2:767397911243:intent:Confirm:*"
+        }
+      }
+    },
+    {
+      "Sid": "lex-us-west-2-GetPatientEntryInformation",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "lex.amazonaws.com"
+      },
+      "Action": "lambda:InvokeFunction",
+      "Resource": "arn:aws:lambda:us-west-2:767397911243:function:stg-lex-lambda-validations",
+      "Condition": {
+        "ArnLike": {
+          "AWS:SourceArn": "arn:aws:lex:us-west-2:767397911243:intent:GetPatientEntryInformation:*"
+        }
+      }
+    },
+    {
+      "Sid": "lex-us-west-2-CreatePatientViaChat",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "lex.amazonaws.com"
+      },
+      "Action": "lambda:InvokeFunction",
+      "Resource": "arn:aws:lambda:us-west-2:767397911243:function:stg-lex-lambda-validations",
+      "Condition": {
+        "ArnLike": {
+          "AWS:SourceArn": "arn:aws:lex:us-west-2:767397911243:intent:CreatePatientViaChat:*"
+        }
+      }
+    },
+    {
+      "Sid": "lex-us-west-2-NewPhoneNumber",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "lex.amazonaws.com"
+      },
+      "Action": "lambda:InvokeFunction",
+      "Resource": "arn:aws:lambda:us-west-2:767397911243:function:stg-lex-lambda-validations",
+      "Condition": {
+        "ArnLike": {
+          "AWS:SourceArn": "arn:aws:lex:us-west-2:767397911243:intent:NewPhoneNumber:*"
+        }
+      }
+    },
+    {
+      "Sid": "lex-us-west-2-GetPatientEntryInfoCombined",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "lex.amazonaws.com"
+      },
+      "Action": "lambda:InvokeFunction",
+      "Resource": "arn:aws:lambda:us-west-2:767397911243:function:stg-lex-lambda-validations",
+      "Condition": {
+        "ArnLike": {
+          "AWS:SourceArn": "arn:aws:lex:us-west-2:767397911243:intent:GetPatientEntryInfoCombined:*"
+        }
+      }
+    },
+    {
+      "Sid": "lex-us-west-2-CallbackNoteIntent",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "lex.amazonaws.com"
+      },
+      "Action": "lambda:InvokeFunction",
+      "Resource": "arn:aws:lambda:us-west-2:767397911243:function:stg-lex-lambda-validations",
+      "Condition": {
+        "ArnLike": {
+          "AWS:SourceArn": "arn:aws:lex:us-west-2:767397911243:intent:CallbackNoteIntent:*"
+        }
+      }
+    },
+    {
+      "Sid": "lex-us-west-2-CancelAppointmentViaChat",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "lex.amazonaws.com"
+      },
+      "Action": "lambda:InvokeFunction",
+      "Resource": "arn:aws:lambda:us-west-2:767397911243:function:stg-lex-lambda-validations",
+      "Condition": {
+        "ArnLike": {
+          "AWS:SourceArn": "arn:aws:lex:us-west-2:767397911243:intent:CancelAppointmentViaChat:*"
+        }
+      }
+    },
+    {
+      "Sid": "lex-us-west-2-RateService",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "lex.amazonaws.com"
+      },
+      "Action": "lambda:InvokeFunction",
+      "Resource": "arn:aws:lambda:us-west-2:767397911243:function:stg-lex-lambda-validations",
+      "Condition": {
+        "ArnLike": {
+          "AWS:SourceArn": "arn:aws:lex:us-west-2:767397911243:intent:RateService:*"
+        }
+      }
+    },
+    {
+      "Sid": "lex-us-west-2-TimeSlotSelectionViaChat",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "lex.amazonaws.com"
+      },
+      "Action": "lambda:InvokeFunction",
+      "Resource": "arn:aws:lambda:us-west-2:767397911243:function:stg-lex-lambda-validations",
+      "Condition": {
+        "ArnLike": {
+          "AWS:SourceArn": "arn:aws:lex:us-west-2:767397911243:intent:TimeSlotSelectionViaChat:*"
+        }
+      }
+    }
+  ]
+}
